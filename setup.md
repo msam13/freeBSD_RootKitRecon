@@ -1,9 +1,10 @@
 # Setting up freeBSD 12.4 in vmware workstation
 
-ISO - https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/12.4/FreeBSD-12.4-RELEASE-amd64-disc1.iso
+ISO - https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/12.4/FreeBSD-12.4-RELEASE-amd64-disc1.iso <br>
 Video : https://www.youtube.com/watch?v=58GtVfOR_js
 
 ## Steps to install SUDO 
+<i> login as root </i> <br>
 
 Install pkg tool for install sudo <br>
 > root$ /usr/sbin/pkg -v <br>
@@ -12,7 +13,7 @@ Install pkg tool for install sudo <br>
 install sudo <br>
 > pkg install sudo <br>
 
-Add desired user to whell and reboot
+Add desired user to wheel and reboot
 > mount -u -w / <br>
 > pw usermod "username" -G wheel <br>
 > reboot <br>
